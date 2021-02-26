@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Listar chamados</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button menu="main-menu"></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ionic-list routerLink="listar"> 
+<ion-content *ngFor="let chamado of chamados">
+ <ion-thumbnail item-start>
+   <h1>{{chamados.id}}</h1>
+   <p>{{chamados.usuarios_autonomo_id}}</p>
+   <p>{{chamados.usuarios_solicitante_id}}</p>
+   <p>{{chamados.status_chamado_id}}</p>
+   <p>{{chamados.lat}}</p>
+   <p>{{chamados.longi}}</p>
+   <p>{{chamados.dia_horario}}</p>
+ </ion-thumbnail>
+</ionic-list>
+</ion-content>

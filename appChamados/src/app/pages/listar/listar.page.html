@@ -1,0 +1,69 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Listar chamados</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button menu="main-menu"></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content *ngFor="let chamado of chamados">
+  <div class="container">
+
+    <ion-item>
+      <ion-label class="a" >Id:</ion-label>
+      <ion-input class="c" >{{chamado.id}}</ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label class="b">Usuarios Autonomo:</ion-label>
+      <ion-input class="c">{{chamado.usuarios_autonomo_id}}</ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label class="b">Usuarios Solicitante:</ion-label>
+      <ion-input class="c">{{chamado.usuarios_solicitante_id}}</ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label class="b">Status de Chamado:</ion-label>
+      <ion-input class="c">{{chamado.status_chamado_id}}</ion-input>
+    </ion-item>
+    
+    <ion-item>
+      <ion-label class="b">Latitude:</ion-label>
+      <ion-input class="c">{{chamado.lat}}</ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label class="b">Longitude:</ion-label>
+      <ion-input class="c">{{chamado.longi}}</ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label class="b">Dia e Horario:</ion-label>
+      <ion-input class="c">{{chamado.dia_horario}}</ion-input>
+    </ion-item>
+  
+  </div>
+  
+  <div class="alng">
+    <ion-item>
+      <ion-label>Habilatar as notificações chamados</ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Sim</ion-label> 
+      <ion-checkbox></ion-checkbox>
+    </ion-item> 
+    
+    <ion-item>
+      <ion-label>Não</ion-label> 
+      <ion-checkbox></ion-checkbox>
+  </ion-item>
+  <br>
+    <ion-button color="success">Fechar Chamado</ion-button>
+    
+  </div>
+  
+</ion-content>
