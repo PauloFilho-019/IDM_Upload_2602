@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { NomeProviderService } from '../../nome-provider.service';
 
-@Component({
+ @Component({
   selector: 'app-listar',
   templateUrl: './listar.page.html',
   styleUrls: ['./listar.page.scss'],
@@ -21,4 +21,6 @@ export class ListarPage implements OnInit {
       this.chamados = data;
     });
   }
+
+  
 }

@@ -36,9 +36,10 @@ const routes: Routes = [
     loadChildren: () => import('./pages/abrir/abrir.module').then( m => m.AbrirPageModule)
   },
   {
-    path: 'listar',
-    loadChildren: () => import('./pages/listar/listar.module').then( m => m.ListarPageModule)
+    path: 'listar copy',
+    loadChildren: () => import('./pages/listar copy/listar.module').then( m => m.ListarPageModule)
   },
+ 
 ];
 
 @NgModule({
