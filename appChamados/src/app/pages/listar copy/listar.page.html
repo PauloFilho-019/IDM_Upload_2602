@@ -8,7 +8,7 @@
 </ion-header>
  
 <ion-content>
-   <ion-item *ngFor="let chamado of chamados" >
+   <ion-item *ngFor="let chamado of chamados" (click)="carregar_detalhes(chamado.id)">
     <h1 class="id">{{chamado.id}}</h1>
     <p class="dia">{{chamado.dia_horario}}</p>
   </ion-item>

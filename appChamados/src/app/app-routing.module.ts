@@ -39,9 +39,11 @@ const routes: Routes = [
     path: 'listar copy',
     loadChildren: () => import('./pages/listar copy/listar.module').then( m => m.ListarPageModule)
   },
- 
+  {
+    path: 'listar',
+    loadChildren: () => import('./pages/listar/listar.module').then( m => m.ListarPageModule)
+  },
 ];
-
 @NgModule({
   imports: [
     RouterModule.forRoot(routes, { preloadingStrategy: PreloadAllModules })
